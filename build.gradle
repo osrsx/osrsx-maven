@@ -1,0 +1,30 @@
+// The osrsx plugin SDK — extracted from the osrsx client monorepo into its own repo so plugin authors
+// (and the client) resolve it as a published artifact rather than a checkout of the client. Holds:
+//   :osrsx-api      — the SDK surface plugins compile against
+//   :osrsx-gradle   — the `io.osrsx.plugin` convention plugin (manifest stamping, installPlugin)
+//   :osrsx-testkit  — the mocked-PluginContext test harness
+// Published to GitHub Packages (see the subprojects publishing block + .github/workflows/publish.yml).
+
+allprojects {
+    group = 'io.osrsx'
+    version = '0.1.0'   // the SDK's independent SemVer; SdkInfo.API_VERSION is stamped from this.
+}
+
+subprojects {
+    // Every module that publishes gets the GitHub Packages repo as a publish target. Reads of public
+    // GitHub Packages still require a token, so consumers authenticate too (see README).
+    plugins.withId('maven-publish') {
+        publishing {
+            repositories {
+                maven {
+                    name = 'GitHubPackages'
+                    url = uri('https://maven.pkg.github.com/ziggle-dev/osrsx-plugin-sdk')
+                    credentials {
+                        username = System.getenv('GITHUB_ACTOR') ?: (findProperty('gpr.user') ?: '')
+                        password = System.getenv('GITHUB_TOKEN') ?: (findProperty('gpr.key') ?: '')
+                    }
+                }
+            }
+        }
+    }
+}
