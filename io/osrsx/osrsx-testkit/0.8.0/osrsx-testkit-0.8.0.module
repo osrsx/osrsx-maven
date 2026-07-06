@@ -1,0 +1,144 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "io.osrsx",
+    "module": "osrsx-testkit",
+    "version": "0.8.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.10.2"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 11,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "io.osrsx",
+          "module": "osrsx-api",
+          "version": {
+            "requires": "0.8.0"
+          }
+        },
+        {
+          "group": "org.mockito.kotlin",
+          "module": "mockito-kotlin",
+          "version": {
+            "requires": "5.2.1"
+          }
+        },
+        {
+          "group": "org.mockito",
+          "module": "mockito-core",
+          "version": {
+            "requires": "5.11.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.1.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "osrsx-testkit-0.8.0.jar",
+          "url": "osrsx-testkit-0.8.0.jar",
+          "size": 15492,
+          "sha512": "a6d209f68a3257339a17b45c6e1be212666ff65a7c82cbf7938df9fe1d6967942cca557267369f70e80828ce459d710f6eaa7829a6fe36d9aa266e2520d2db8e",
+          "sha256": "3b8f9bbc1a4148420eea301499d9be55e629ac2414d72c3f30a1ec4041dfe44c",
+          "sha1": "d084d794e1c33c1854243111f766657df01c3af1",
+          "md5": "dcb8966234372cdc9142c12ee1f931c9"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 11,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "io.osrsx",
+          "module": "osrsx-api",
+          "version": {
+            "requires": "0.8.0"
+          }
+        },
+        {
+          "group": "org.mockito.kotlin",
+          "module": "mockito-kotlin",
+          "version": {
+            "requires": "5.2.1"
+          }
+        },
+        {
+          "group": "org.mockito",
+          "module": "mockito-core",
+          "version": {
+            "requires": "5.11.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.1.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "osrsx-testkit-0.8.0.jar",
+          "url": "osrsx-testkit-0.8.0.jar",
+          "size": 15492,
+          "sha512": "a6d209f68a3257339a17b45c6e1be212666ff65a7c82cbf7938df9fe1d6967942cca557267369f70e80828ce459d710f6eaa7829a6fe36d9aa266e2520d2db8e",
+          "sha256": "3b8f9bbc1a4148420eea301499d9be55e629ac2414d72c3f30a1ec4041dfe44c",
+          "sha1": "d084d794e1c33c1854243111f766657df01c3af1",
+          "md5": "dcb8966234372cdc9142c12ee1f931c9"
+        }
+      ]
+    },
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "osrsx-testkit-0.8.0-sources.jar",
+          "url": "osrsx-testkit-0.8.0-sources.jar",
+          "size": 2337,
+          "sha512": "a50fbb16f2ef996ad984ea56ffccec9e75a967c7d2ab337f226db81ec6242f56828a6551c8d61f93c7bc9329f5e77c2ca461020637be696719e6c1667096fc2d",
+          "sha256": "15f0756489726e97801f112f5586c86d24203b1856f6bc1afb083c00fd43cd91",
+          "sha1": "e857f1c568d8fc9361ae13d2809af2868f50ec55",
+          "md5": "3e44d52b656289d4d0a124e294114bc7"
+        }
+      ]
+    }
+  ]
+}
