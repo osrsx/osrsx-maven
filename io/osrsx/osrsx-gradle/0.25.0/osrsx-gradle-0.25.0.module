@@ -1,0 +1,89 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "io.osrsx",
+    "module": "osrsx-gradle",
+    "version": "0.25.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.6.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "osrsx-gradle-0.25.0.jar",
+          "url": "osrsx-gradle-0.25.0.jar",
+          "size": 28098,
+          "sha512": "c91d2043147d4a920c9e1adc3b45f4e1ded4239dd24d14b7e2ab1b252006c93527978f95745f19be4d38a30965967e214921f3d535c0d789bc1cc8cf805c692d",
+          "sha256": "c1489c0ae5a57fa27f187997dbd3fac652f14009dba0e81622b5d786b6abc7d4",
+          "sha1": "75383439188fc5a8f298c7cd9df78a5b998a11e2",
+          "md5": "935ee4bfc57aef624ff6a324d1d75ad1"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-gradle-plugin",
+          "version": {
+            "requires": "2.3.21"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "osrsx-gradle-0.25.0.jar",
+          "url": "osrsx-gradle-0.25.0.jar",
+          "size": 28098,
+          "sha512": "c91d2043147d4a920c9e1adc3b45f4e1ded4239dd24d14b7e2ab1b252006c93527978f95745f19be4d38a30965967e214921f3d535c0d789bc1cc8cf805c692d",
+          "sha256": "c1489c0ae5a57fa27f187997dbd3fac652f14009dba0e81622b5d786b6abc7d4",
+          "sha1": "75383439188fc5a8f298c7cd9df78a5b998a11e2",
+          "md5": "935ee4bfc57aef624ff6a324d1d75ad1"
+        }
+      ]
+    },
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "osrsx-gradle-0.25.0-sources.jar",
+          "url": "osrsx-gradle-0.25.0-sources.jar",
+          "size": 20030,
+          "sha512": "fb8f0ba9bf5ecf5d0d1519eb3b263287f5e24efe7b40e733396b4d0d887c4da7fefee762d34e661aedc43220ed9cffc7f4fa1498ce1aa4a96641a691ecbfe3fa",
+          "sha256": "6247263fc705c7bc842fe8c669e0188c51b5dc4310c399b8963652dc53a6b2b1",
+          "sha1": "bdc9a3af49a758b56c16a3a37e354ef866686e43",
+          "md5": "13fbcc6ae79c4ed9ef4a35ac81d7b992"
+        }
+      ]
+    }
+  ]
+}
