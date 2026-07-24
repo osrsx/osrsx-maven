@@ -3,11 +3,11 @@
   <groupId>io.osrsx</groupId>
   <artifactId>osrsx-api</artifactId>
   <versioning>
-    <latest>0.31.3</latest>
-    <release>0.31.3</release>
+    <latest>0.33.1</latest>
+    <release>0.33.1</release>
     <versions>
-      <version>0.31.3</version>
+      <version>0.33.1</version>
     </versions>
-    <lastUpdated>20260723034308</lastUpdated>
+    <lastUpdated>20260724040107</lastUpdated>
   </versioning>
 </metadata>
